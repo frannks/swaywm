@@ -20,7 +20,7 @@
     "margin-bottom": 0,
     "modules-left": ["sway/workspaces", "sway/window"],
     "modules-center": ["cpu", "temperature","memory"],
-    "modules-right": ["custom/ibus","pulseaudio","clock","tray","custom/powermenu"],
+    "modules-right": ["custom/ibus","pulseaudio", "custom/colorpicker", "clock","tray","custom/powermenu"],
 
  "sway/window": {
 	"format": "{}",
@@ -126,4 +126,10 @@
         "format": "{icon} {temperatureC}°C",
         "format-icons": ["", "", ""]
         },
+
+    "custom/colorpicker": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "exec hyprpicker -ar",
+    },
 }
